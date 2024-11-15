@@ -1,33 +1,23 @@
 import React, { useState } from 'react'
 import "./App.css";
-import EmailUL from './components/email/EmailUL'
-import EmailContainer from './components/email/EmailContainer';
-import FilterBar from './components/filter/FilterBar';
+import { NavLink } from 'react-router-dom';
+
 
 export default function AppLayout({data}) {
-  const [emails, setEmails] = useState({});
-  const [isOpen, setIsOpen] = useState(null)
-  const [isRead, setIsRead] = useState([]);
-  const [favEmail, setFavEmail] = useState([]);
-
-  const[filter, setFilter] = useState("All");
-
-  async function  fetchEmailBody (id, subject, time, name){
-    const res = await fetch(`https://flipkart-email-mock.vercel.app/?id=${id}#`)
-    const resEmails = await res.json();
-    setEmails({body:resEmails.body, subject, time, name, id});
-  }
 
   
   return (
-  <div className='body'>
-    <FilterBar setFilter={setFilter} setIsOpen={setIsOpen}/>
-    <div className='layoutContainer'>
-      <EmailUL filter={filter} email={data} setIsOpen={setIsOpen} isOpen={isOpen} setIsRead={setIsRead} isRead={isRead} favEmail={favEmail} fetchEmailBody={fetchEmailBody}/>
-        {isOpen !== null?  (
-          <EmailContainer email={emails} favEmail={favEmail} setFavEmail={setFavEmail}/>
-        ) : ""}
-    </div>
+    <div className='applayout'>
+      <div className='applayout-innerdiv'>
+        <section className='applayout-heading'>
+          <h1>Fullstack-Test-2024-10-12</h1>        
+          <h3>Attempt key: <span>12826QK8f50qR0</span></h3>
+        </section>
+        <ul className='applayout-ul'>
+          <NavLink to="outlook"><p>Q1. Outlook</p></NavLink>
+          <NavLink to="data-visualization-dash"><p>Q2. Data Visualization Dash</p></NavLink>
+        </ul>
+      </div>
     </div>
   )
 }

@@ -16,12 +16,30 @@
 
 body {
     background-color: #f4f5f9;
+    font-family: "Poppins", sans-serif;
 }
 
 .body {
     margin: 20px 40px;
-    font-family: "Poppins", sans-serif;
     color: var(--text);
+}
+
+.applayout {
+    margin: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.applayout-innerdiv > * {
+    margin-bottom: 30px;
+}
+.applayout-heading > *{
+    margin-bottom: 10px;
+}
+.applayout-ul p {
+    margin-bottom: 10px;
 }
 
 .favorite-btn {

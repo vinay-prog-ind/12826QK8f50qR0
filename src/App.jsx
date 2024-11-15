@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+
 import './App.css';
 import AppLayout from './AppLayout';
+import OutlookLayout from './Application/outlook/components/outlook/OutlookLayout'
+import DataVisulizationDash from './Application/data_visulization_dash/dataVisulizationDash/DataVisulizationDash';
 
 function App() {
 
@@ -18,7 +22,16 @@ function App() {
     
 
   return (
-    <AppLayout data={data}/>
+    <>
+      <Router>
+        <Routes>
+          <Route path='/' index element={<AppLayout/>}/>
+          <Route path='/outlook' element={<OutlookLayout/>}/>
+          <Route path='/data-visualization-dash' element={<DataVisulizationDash/>}/>
+        </Routes>
+      </Router>
+      {/* <AppLayout data={data}/> */}
+    </>
   );
 }
 
