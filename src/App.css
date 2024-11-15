@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+    --accent: #E54065;
+    --background: #F4F5F9;
+    --border: #CFC2DC;
+    --text: #636363;
+    --filter-btn: #E1E4EA;
+    --read-bg: #F2F2F2;
+}
+
+body {
+    background-color: #f4f5f9;
+}
+
+.body {
+    margin: 20px 40px;
+    font-family: "Poppins", sans-serif;
+    color: var(--text);
+}
+
+.favorite-btn {
+        border: 2px solid transparent;
+        border-radius: 15px;
+        font-size: 12px;
+        color: #f2f2f2;
+        background-color: #E54065;
+        padding: 5px 10px;
+        height: min-content;
+}
+
+.filterBar {
+    margin: 20px 0px;
+    display: flex;
+    color: black;
+}
+.filterUl {
+    display: flex;
+    list-style: none;
+    margin: 0px 20px;
+}
+.filterLi {
+    margin: 0px 2px;
+}
+.selectedFilter {
+    
+}
+
+.bold {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.layoutContainer {
+    display: flex;
+}
+
+.profile {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* padding: 0px 10px 10px 10px ; */
+    margin: 0px 10px;
+    padding-right: 15px;
+}
+.profileName-wrapper {
+    /* position: relative; */
+    padding: 7px;
+    background-color: var(--accent);
+    /* height: 10px; */
+    text-align: center;
+    width: 40px;
+    border-radius: 99%;
+    color: var(--background);
+    
+}
+.profileName-wrapper h2 {
+    font-weight: 100;
+}
+
+.emailList {
+    /* overflow-y: auto; */
+    /* max-width: fit-content; */
+}
+.emailLi {
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    border: solid 1px var(--border);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    list-style: none;
+}
+.emailLi:hover {
+    border-color: rgba(229, 64, 101, .5);
+}
+.email-details {
+    font-size: 14px;
+}
+.master {
+    width: 100%;
+    max-width: 100%;
+}
+.email-des >* {
+    margin-bottom: 3px;
+}
+.read {
+    background-color: var(--read-bg);
+}
+.isOpen {
+    background-color: white;
+    border-color: var(--accent);
+}
+.from {
+    display: flex;
+}
+.subject-p {
+    margin-bottom: 5px;
+}
+.emailLi-time-fav-div {
+    display: flex;
+}
+.isFavorite {
+    margin-left: 25px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+
+.emailContainer {
+    position: fixed;
+    display: flex;
+    background-color: white;
+    border: 1px solid var(--border);
+    padding: 20px 60px 20px 20px;
+    margin: 0px 20px 20px 20px;
+    height: 600px;  
+    border-radius: 15px;
+
+}
+.emailTitleBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.emailBody-div {
+    height: 500px;
+    overflow-y: auto;    
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 99, 99, .3) white;
+    padding-right: 20px;
+}
+.emailBody {
+    font-size: 14px;
+
+}
