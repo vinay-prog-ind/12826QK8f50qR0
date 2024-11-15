@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./App.css";
 import EmailUL from './components/email/EmailUL'
 import EmailContainer from './components/email/EmailContainer';

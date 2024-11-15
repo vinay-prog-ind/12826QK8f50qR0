@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import styled, {css} from 'styled-components'
 
 const type = {
@@ -39,7 +38,6 @@ const StyledButton = styled.button`
 
 export default function Button({type, children}) {
 
-    const [isactive, setIsActive] = useState(false);
-    // const [activeBtn, setActiveBtn] = useState(null);
+
     return <StyledButton type={type}>{children}</StyledButton>;
 };

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import Profile from '../../ui/Profile';
-import Button from '../../ui/Button';
+// import Button from '../../ui/Button';
 
 export default function EmailContainer({email, favEmail, setFavEmail}) {
 
