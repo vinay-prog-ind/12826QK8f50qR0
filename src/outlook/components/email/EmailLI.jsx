@@ -1,7 +1,6 @@
 import React from 'react'
-import Profile from '../../../../../ui/Profile';
-import { getDate } from '../../../../../utils/dateFormate';
-// import Button from '../../ui/Button';
+import Profile from '../../ui/Profile';
+import { getDate } from '../../../utils/dateFormate';
 
 export default function EmailLI({email, setIsOpen, isOpen, setIsRead, isRead, favEmail, fetchEmailBody}) {
     const {id, from, date, subject, short_description} = email;

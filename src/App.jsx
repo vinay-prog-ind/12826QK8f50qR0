@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 import './App.css';
 import AppLayout from './AppLayout';
-import OutlookLayout from './Application/outlook/components/outlook/OutlookLayout'
-import DataVisulizationDash from './Application/data_visulization_dash/dataVisulizationDash/DataVisulizationDash';
+import OutlookLayout from './outlook/components/OutlookLayout'
+import DataVisulizationDash from './data_visulization_dash/dataVisulizationDash/DataVisulizationDash';
 
 function App() {
 
