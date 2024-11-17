@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.css';
 import AppLayout from './AppLayout';
 import OutlookLayout from './outlook/components/OutlookLayout'
-import DataVisulizationDash from './data_visulization_dash/dataVisulizationDash/DataVisulizationDash';
+import Dashboard from './data_visulization_dash/frontend/components/dataVisualizationDash/Dashboard';
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route path='/' index element={<AppLayout/>}/>
           <Route path='/outlook' element={<OutlookLayout/>}/>
-          <Route path='/data-visualization-dash' element={<DataVisulizationDash/>}/>
+          <Route path='/data-visualization-dash' element={<Dashboard/>}/>
         </Routes>
       </Router>
       {/* <AppLayout data={data}/> */}

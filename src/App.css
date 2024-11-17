@@ -177,3 +177,49 @@ body {
     font-size: 14px;
 
 }
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.Login input {
+    /* margin-bottom: 10px; */
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.login-inner {
+
+}
+
+.Register {
+    /* margin: 20px 0px; */
+}
+
+#register-input-div {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+
+}
+
+#register-input-div > *
+{
+    margin: 5px 0px;
+}
+
+#register-btn {
+    padding: 5px;
+}
+
+.sign-in > *{
+    margin: 5px 0px;
+}
+#sign-in-btn {
+    padding: 9px;
+    margin-left: 10px;
+}
