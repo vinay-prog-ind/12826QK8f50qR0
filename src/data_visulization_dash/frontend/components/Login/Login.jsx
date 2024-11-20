@@ -8,7 +8,7 @@ export default function Login() {
     const [password, setPassword] = useState("");
 
   return(
-  <div className='Login'>
+  <div className='login'>
     <div className='login-inner'>
       <h1>Sign In</h1>
       <section className='Register'>
