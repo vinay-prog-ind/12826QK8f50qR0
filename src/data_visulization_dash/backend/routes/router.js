@@ -1,9 +1,14 @@
 const express = require('express');
 
 const salesController = require('../controller/salesController')
+const authControlled = require("../controller/authControlled");
 
 const router = express.Router();
 
-router.route('/data-visualization-dash').get(salesController.getSalesData);
+router.post('/signup', authControlled.signup);
+router.post('/login', authControlled.login);
+router.get('/getUsers', authControlled.getAllUser);
 
-module.exports = router;
+router.route('/dashboard').get(authControlled.protect, salesController.getSalesData);
+
+module.exports = router;    

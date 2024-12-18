@@ -193,34 +193,25 @@ body {
     border-radius: 5px;
 }
 
-.login-inner {
-
+#changeView_login {
+    color: #636363;
+    cursor: pointer;
+}
+#changeView_login:hover {
+    color: gray;
 }
 
-.Register {
-    /* margin: 20px 0px; */
-}
-
-#register-input-div {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-
-}
-
-#register-input-div > *
-{
-    margin: 5px 0px;
-}
-
-#register-btn {
-    padding: 5px;
-}
 
 .sign-in > *{
     margin: 5px 0px;
 }
 #sign-in-btn {
     padding: 9px;
-    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+#register-btn {
+    padding: 9px;
+    margin-top: 5px;
+    width: 100%;
 }

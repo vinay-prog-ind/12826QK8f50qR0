@@ -15,7 +15,7 @@ export default function AppLayout({data}) {
         </section>
         <ul className='applayout-ul'>
           <NavLink to="outlook"><p>Q1. Outlook</p></NavLink>
-          <NavLink to="data-visualization-dash"><p>Q2. Data Visualization Dash</p></NavLink>
+          <NavLink to="data-visualization-dash/login"><p>Q2. Data Visualization Dash</p></NavLink>
         </ul>
       </div>
     </div>
